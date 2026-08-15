@@ -29,6 +29,3 @@ Evaluated the decision tree using RMSE and MAE, then built a linear regression m
 
 R, rpart, rpart.plot, randomForest, caret, ggplot2, caTools
 
-## Note on missing-value strategy
-
-The assignment brief also raises an important related case worth noting: not every missing value should be treated the same way. If a dataset merge introduces NAs because a category genuinely doesn't apply — for example, a country with no Olympic medal record — replacing that NA with 0 would be correct, since the true value is "none," not "unknown." In this dataset, missing ratings and release years reflect genuinely missing information rather than a true zero, which is why mean/median imputation was used instead.
